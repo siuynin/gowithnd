@@ -1,210 +1,204 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liên Hệ - Du Lịch Gia Lai</title>
-    <link rel="stylesheet" href="assets/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <title>Liên Hệ | DULICH GIALAI</title>
+    <meta name="description" content="Liên hệ với DULICH GIALAI để được tư vấn tour, thuê xe và các dịch vụ du lịch hấp dẫn.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
  
 </head>
+
 <body>
-    <!-- Top Bar -->
-    <div class="top-bar">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <span class="logo-text">DULICH GIALAI</span>
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="scrolled">
         <div class="container">
-            <div class="top-bar-content">
-                <div class="top-bar-contact">
-                    <a href="tel:0905 835 538"><i class="fas fa-phone"></i> 0905 835 538</a>
-                    <a href="mailto:fitothinh@gmail.com"><i class="fas fa-envelope"></i> fitothinh@gmail.com</a>
-                </div>
-                <div class="top-bar-social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo"></a>
+            <ul class="nav-links">
+                <div class="mobile-menu-close"><i class="fas fa-times"></i></div>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                <li><a href="thue-xe.html">Thuê Xe</a></li>
+                <li><a href="tours.html">Tour</a></li>
+                <li><a href="dac-san.html">Đặc sản</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Liên Hệ</a></li>
+            </ul>
+            <div class="nav-extra">
+                <button class="btn-primary">0905 835 538</button>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <!-- Header -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <img src="assets/images/logo.png" alt="Du Lịch Gia Lai">
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Trang Chủ</a></li>
-                    <li><a href="tour.html" class="nav-link">Tour</a></li>
-                    <li><a href="specialties.html" class="nav-link">Đặc Sản</a></li>
-                    <li><a href="cars-rent.html" class="nav-link">Thuê Xe</a></li>
-                    <li><a href="blog.html" class="nav-link">Tin Tức</a></li>
-                    <li><a href="contact.html" class="nav-link active">Liên Hệ</a></li>
-                </ul>                
-                <div class="header-actions">
-                    <div class="search-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <a href="tel:+84123456789" class="contact-now-btn">
-                        <i class="fas fa-phone-alt"></i>
-                        <span>Liên Hệ Ngay</span>
-                    </a>
-                </div>
-                
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
-    </header>
- 
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=2070&auto=format&fit=crop');
+">
+        <div class="container animate-on-scroll">
+            <h5 class="section-subtitle" style="color: var(--white);">Kết Nối Với Chúng Tôi</h5>
+            <h1>Liên Hệ</h1>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section class="contact-section">
+    <section id="contact" class="contact section-padding">
         <div class="container">
-            <div class="section-header">
-                <h2>Liên Hệ Với Chúng Tôi</h2>
-                <p>Hãy liên hệ với chúng tôi nếu bạn có bất kỳ câu hỏi hoặc yêu cầu nào. Chúng tôi luôn sẵn sàng hỗ trợ bạn!</p>
-            </div>
-            
-            <div class="contact-container">
-                <div class="contact-info-column">
-                    <div class="contact-info-card">
-                        <h3>Thông Tin Liên Hệ</h3>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Địa Chỉ</h4>
-                                <p>123 Đường ABC, Quy Nhơn, Gia Lai</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
+            <div class="contact-card">
+                <div class="contact-info-side">
+                    <h2>Liên Hệ Với <span>Chúng Tôi</span></h2>
+                    <p>Hãy để chúng tôi giúp bạn hiện thực hóa kỳ nghỉ trong mơ.</p>
+
+                    <div class="contact-details">
+                        <div class="detail-item">
                             <i class="fas fa-phone-alt"></i>
                             <div>
-                                <h4>Điện Thoại</h4>
-                                <p><a href="tel:0905835538">0905 835 538</a></p>
+                                <span>Hotline 24/7</span>
+                                <p>+84 0905 835 538</p>
                             </div>
                         </div>
-                        <div class="contact-item">
+                        <div class="detail-item">
                             <i class="fas fa-envelope"></i>
                             <div>
-                                <h4>Email</h4>
-                                <p><a href="mailto:fitothinh@gmail.com">fitothinh@gmail.com</a></p>
+                                <span>Email</span>
+                                <p>contact@DULICH GIALAI.com</p>
                             </div>
-                        </div> 
-                    </div> 
-                </div>
-                
-                <div class="contact-map-column">
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61349.62126282751!2d109.17952397431642!3d13.759724899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316f6c65736eabd9%3A0x1c06da9af8401816!2zUXV5IE5oxqFuLCBCw6xuaCDEkOG7i25oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1716036000000!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    
-                    <div class="social-connect">
-                        <h3>Kết Nối Với Chúng Tôi</h3>
-                        <div class="social-icons">
-                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span>Địa Chỉ</span>
+                                <p>123 Đường Sắc Màu, Quận 1, TP. Hồ Chí Minh</p>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-side">
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="text" placeholder="Họ và tên" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option value="" disabled selected>Chọn chủ đề quan tâm</option>
+                                <option value="tour">Tư vấn Tour</option>
+                                <option value="car">Thuê xe sang</option>
+                                <option value="other">Yêu cầu khác</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="4" placeholder="Lời nhắn của bạn..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary full-width">Gửi Yêu Cầu</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <!-- Google Map Section -->
+    <section class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.029813007624!2d108.0068893758652!3d13.777322986617518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316c202027961225%3A0xc39281a894676646!2sPleiku%2C%20Gia%20Lai!5e0!3m2!1sen!2s!4v1705650000000!5m2!1sen!2s" 
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="main-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3><i class="fas fa-map-marked-alt"></i> Du Lịch Gia Lai</h3>
+            <div class="footer-grid">
+                <!-- Brand Info -->
+                <div class="footer-widget brand-widget">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-map-marked-alt"></i> Du Lịch Gia Lai
+                    </a>
                     <p>Đồng hành cùng bạn khám phá vẻ đẹp Việt Nam</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
                         <a href="#"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
-                <div class="footer-section">
+
+                <!-- Quick Links -->
+                <div class="footer-widget links-widget">
                     <h4>Liên Kết Nhanh</h4>
                     <ul>
                         <li><a href="index.html">Trang Chủ</a></li>
-                        <li><a href="tour.html">Tour</a></li>
-                        <li><a href="#specialties">Đặc Sản</a></li>
-                        <li><a href="#car-rental">Thuê Xe</a></li>
+                        <li><a href="tours.html">Tour</a></li>
+                        <li><a href="dac-san.html">Đặc Sản</a></li>
+                        <li><a href="thue-xe.html">Thuê Xe</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+
+                <!-- Information -->
+                <div class="footer-widget links-widget">
                     <h4>Thông Tin</h4>
                     <ul>
-                        <li><a href="#news">Tin Tức</a></li>
-                        <li><a href="#contact">Liên Hệ</a></li>
+                        <li><a href="blog.html">Tin Tức</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
                         <li><a href="#">Chính Sách</a></li>
                         <li><a href="#">Điều Khoản</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+
+                <!-- Contact -->
+                <div class="footer-widget contact-widget">
                     <h4>Liên Hệ</h4>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> 0905 835 538</p>
-                        <p><i class="fas fa-envelope"></i> fitothinh@gmail.com</p>
-                        <p><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, TP. Quy Nhơn</p>
-                    </div>
+                    <ul>
+                        <li><i class="fas fa-phone-alt"></i> +84905 835 538</li>
+                        <li><i class="fas fa-envelope"></i> Fitothinh@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, TP. Quy Nhơn</li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
+
+            <div class="footer-bottom-bar">
                 <p>&copy; 2024 Du Lịch Gia Lai. Tất cả quyền được bảo lưu.</p>
             </div>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script src="assets/script.js"></script>
-    <script>
-        $(document).ready(function(){
-            // Form validation
-            $('#contactForm').on('submit', function(e) {
-                e.preventDefault();
-                
-                const form = $(this);
-                let isValid = true;
-                
-                // Simple validation
-                form.find('input[required], textarea[required]').each(function() {
-                    if (!$(this).val().trim()) {
-                        $(this).addClass('error');
-                        isValid = false;
-                    } else {
-                        $(this).removeClass('error');
-                    }
-                });
-                
-                if (isValid) {
-                    // Here you would normally send the form data to a server
-                    // For demo purposes, we'll just show a success message
-                    alert('Cảm ơn bạn đã liên hệ với chúng tôi! Chúng tôi sẽ phản hồi trong thời gian sớm nhất.');
-                    form[0].reset();
-                } else {
-                    alert('Vui lòng điền đầy đủ thông tin bắt buộc.');
-                }
-            });
-            
-            // Remove error class on input when user types
-            $('#contactForm input, #contactForm textarea').on('input', function() {
-                if ($(this).val().trim()) {
-                    $(this).removeClass('error');
-                }
-            });
-        });
-    </script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

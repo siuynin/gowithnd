@@ -1,573 +1,511 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Du Lịch Gia Lai - Khám Phá Vẻ Đẹp Việt Nam</title>
-    <link rel="stylesheet" href="assets/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <title>DULICH GIALAI | Blog Du Lịch Sang Trọng & Đẳng Cấp</title>
+    <meta name="description"
+        content="Khám phá những điểm đến xa hoa, dịch vụ nghỉ dưỡng thượng lưu và trải nghiệm du lịch tinh tế cùng DULICH GIALAI.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="top-bar-content">
-                <div class="top-bar-contact">
-                    <a href="tel:0905 835 538"><i class="fas fa-phone"></i> 0905 835 538</a>
-                    <a href="mailto:fitothinh@gmail.com"><i class="fas fa-envelope"></i> fitothinh@gmail.com</a>
-                </div>
-                <div class="top-bar-social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-tiktok"></i></a>
-                </div>
-            </div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <span class="logo-text">DULICH GIALAI</span>
+            <div class="progress-bar"></div>
         </div>
     </div>
-    
-    <!-- Header -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <img src="assets/images/logo.png" alt="Du Lịch Gia Lai">
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#home" class="nav-link active">Trang Chủ</a></li>
-                    <li><a href="tour.html" class="nav-link">Tour</a></li>
-                    <li><a href="specialties.html" class="nav-link">Đặc Sản</a></li>
-                    <li><a href="cars-rent.html" class="nav-link">Thuê Xe</a></li>
-                    <li><a href="blog.html" class="nav-link">Tin Tức</a></li>
-                    <li><a href="contact.html" class="nav-link">Liên Hệ</a></li>
-                </ul>
-                
-                <div class="header-actions">
-                    <div class="search-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <a href="tel:+84123456789" class="contact-now-btn">
-                        <i class="fas fa-phone-alt"></i>
-                        <span>Liên Hệ Ngay</span>
-                    </a>
-                </div>
-                
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
-    </header>
 
-    <!-- Hero Slider Section -->
-    <section id="home" class="hero-slider">
-        <div class="slider-container">
-            <div class="slide active">
-                <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"></div>
-                <div class="slide-content">
-                    <h1>Khám Phá Miền Trung Việt Nam</h1>
-                    <p>Trải nghiệm những cảnh đẹp tuyệt vời và văn hóa độc đáo</p>
-                    <button class="cta-btn">Khám Phá Ngay</button>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"></div>
-                <div class="slide-content">
-                    <h1>Tour Độc Đáo & Ấn Tượng</h1>
-                    <p>Những chuyến đi không thể quên với dịch vụ chuyên nghiệp</p>
-                    <button class="cta-btn">Đặt Tour</button>
-                </div>
-            </div> 
-        </div>
-        <div class="slider-nav">
-            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
-            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
-        </div>
-        <div class="slider-dots">
-            <span class="dot active" data-slide="0"></span>
-            <span class="dot" data-slide="1"></span> 
-        </div>
-    </section>
-
-    <!-- Destinations Section -->
-    <section class="destinations">
+    <!-- Navigation -->
+    <nav id="main-nav">
         <div class="container">
-            <div class="section-header">
-                <h2>Điểm Đến Hấp Dẫn</h2>
-                <p>Khám phá những vùng đất tuyệt đẹp của miền Trung</p>
-            </div>
-            <div class="destinations-slider">
-                <div class="destinations-slider-container">
-                    <div class="destination-card">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Kon Tum">
-                            <div class="card-overlay">
-                                <h3>Kon Tum</h3>
-                                <p>Vùng đất của những ngôi nhà sàn và văn hóa dân tộc</p>
-                                <a href="tour.html" class="explore-btn">Khám Phá</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="destination-card">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Gia Lai">
-                            <div class="card-overlay">
-                                <h3>Gia Lai</h3>
-                                <p>Cao nguyên xanh mướt với những đồi chè bất tận</p>
-                                <a href="tour.html" class="explore-btn">Khám Phá</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="destination-card">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Quy Nhơn">
-                            <div class="card-overlay">
-                                <h3>Quy Nhơn</h3>
-                                <p>Thành phố biển với những bãi cát trắng tuyệt đẹp</p>
-                                <a href="tour.html" class="explore-btn">Khám Phá</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="destination-card">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Phú Yên">
-                            <div class="card-overlay">
-                                <h3>Phú Yên</h3>
-                                <p>Vùng đất của những cánh đồng hoa vàng rực rỡ</p>
-                                <a href="tour.html" class="explore-btn">Khám Phá</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="destination-card">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Đà Nẵng">
-                            <div class="card-overlay">
-                                <h3>Đà Nẵng</h3>
-                                <p>Thành phố đáng sống với cầu Rồng và bãi biển Mỹ Khê</p>
-                                <a href="tour.html" class="explore-btn">Khám Phá</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="destination-card">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Huế">
-                            <div class="card-overlay">
-                                <h3>Huế</h3>
-                                <p>Cố đô với di sản văn hóa và ẩm thực tinh tế</p>
-                                <a href="tour.html" class="explore-btn">Khám Phá</a>
-                            </div>
-                        </div>
-                    </div>
+            <a href="#" class="logo"> <img src="images/logo.png" alt="Logo"></a>
+             <ul class="nav-links">
+                <div class="mobile-menu-close"><i class="fas fa-times"></i></div>
+                <li><a href="index.html" class="active">Trang Chủ</a></li>
+                <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                <li><a href="thue-xe.html">Thuê Xe</a></li>
+                <li><a href="tours.html">Tour</a></li>
+                <li><a href="dac-san.html">Đặc sản</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+            <div class="nav-extra">
+                <button class="btn-primary">0905 835 538</button>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2070&auto=format&fit=crop"
+                alt="Luxury Travel Hero">
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content container">
+            <h1 class="reveal-text">Hành Trình <br><span>Khám Phá & Trải Nghiệm</span></h1>
+            <p class="reveal-text">Tận hưởng vẻ đẹp hoang sơ của núi rừng Tây Nguyên và những bãi biển xanh ngắt của
+                Duyên hải Miền Trung cùng dịch vụ tận tâm.</p>
+            <div class="hero-btns reveal-text">
+                <a href="tours.html" class="btn-primary">Khám Phá Tour</a>
+                <a href="#about" class="btn-outline">Tìm Hiểu Thêm</a>
             </div>
+        </div>
+        <div class="scroll-down">
+            <span>Cuộn để khám phá</span>
+            <div class="line"></div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about">
+    <section id="about" class="about section-padding">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Về Chúng Tôi</h2>
-                    <p>Với hơn 10 năm kinh nghiệm trong lĩnh vực du lịch, chúng tôi tự hào là đơn vị hàng đầu trong việc tổ chức các tour du lịch chất lượng cao tại miền Trung Việt Nam.</p>
-                    <div class="features">
-                        <div class="feature">
-                            <i class="fas fa-award"></i>
+            <div class="about-wrapper">
+                <div class="about-img animate-on-scroll slide-right">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2070&auto=format&fit=crop"
+                        alt="About Us">
+                    <div class="experience-badge">
+                        <span>15+</span>
+                        <p>Năm Kinh Nghiệm</p>
+                    </div>
+                </div>
+                <div class="about-content animate-on-scroll slide-left">
+                    <h5 class="section-subtitle">Về DULICH GIALAI</h5>
+                    <h2 class="section-title">Nâng Tầm Trải Nghiệm <span>Du Lịch Thượng Lưu</span></h2>
+                    <p>Tại DULICH GIALAI, chúng tôi không chỉ bán những chuyến đi, chúng tôi kiến tạo những kỷ niệm vô
+                        giá.
+                        Với triết lý lấy sự hài lòng của khách hàng làm trọng tâm, mỗi hành trình đều được thiết kế tỉ
+                        mỉ để phản ánh cá tính và đẳng cấp của bạn.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-gem"></i>
                             <div>
-                                <h4>Chất Lượng Đảm Bảo</h4>
-                                <p>Dịch vụ chuyên nghiệp, uy tín</p>
+                                <h4>Dịch Vụ Cao Cấp</h4>
+                                <p>Mọi chi tiết đều được chăm chút hoàn hảo.</p>
                             </div>
                         </div>
-                        <div class="feature">
-                            <i class="fas fa-users"></i>
+                        <div class="feature-item">
+                            <i class="fas fa-map-marked-alt"></i>
                             <div>
-                                <h4>Đội Ngũ Chuyên Nghiệp</h4>
-                                <p>Hướng dẫn viên giàu kinh nghiệm</p>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-heart"></i>
-                            <div>
-                                <h4>Tận Tâm Phục Vụ</h4>
-                                <p>Luôn đặt khách hàng lên hàng đầu</p>
+                                <h4>Điểm Đến Độc Quyền</h4>
+                                <p>Những địa điểm riêng tư và sang trọng nhất.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="About Us">
+                    <a href="gioi-thieu.html" class="btn-text">Xem thêm về chúng tôi <i
+                            class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Tours Section -->
-    <section id="tours" class="tours">
+    <!-- Places Section (Owl Carousel) -->
+    <section id="places" class="places section-padding">
         <div class="container">
-            <div class="section-header">
-                <h2>Tour Nổi Bật</h2>
-                <p>Những chuyến đi được yêu thích nhất</p>
+            <div class="section-header text-center">
+                <h5 class="section-subtitle">Khám Phá Miền Trung - Tây Nguyên</h5>
+                <h2 class="section-title">Điểm Đến <span>Tuyệt Đẹp</span></h2>
+                <div class="header-line"></div>
             </div>
-            <div class="tours-grid">
-                <div class="tour-card">
-                    <div class="tour-image">
-                        <a href="tour-details.html">
-                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Tour Kon Tum">
-                        </a>
-                        <div class="tour-price">2.500.000đ</div>
-                    </div>
-                    <div class="tour-content">
-                        <a href="tour-details.html" style="text-decoration: none; color: inherit;">
-                            <h3>Tour Kon Tum 3N2Đ</h3>
-                        </a>
-                        <p><i class="fas fa-clock"></i> 3 ngày 2 đêm</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Kon Tum - Pleiku</p>
-                        <div class="tour-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(4.8)</span>
-                        </div>
-                        <a href="tour-details.html" class="book-btn">Đặt Tour</a>
+
+            <div class="places-carousel owl-carousel owl-theme animate-on-scroll">
+                <div class="place-item">
+                    <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=2070&auto=format&fit=crop"
+                        alt="Gia Lai">
+                    <div class="place-overlay">
+                        <h3>Gia Lai</h3>
+                        <p>Biển Hồ T'Nưng & Thác Phú Cường</p>
                     </div>
                 </div>
-                <div class="tour-card">
-                    <div class="tour-image">
-                        <a href="tour-details.html">
-                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Tour Quy Nhơn">
-                        </a>
-                        <div class="tour-price">1.800.000đ</div>
-                    </div>
-                    <div class="tour-content">
-                        <a href="tour-details.html" style="text-decoration: none; color: inherit;">
-                            <h3>Tour Quy Nhơn 2N1Đ</h3>
-                        </a>
-                        <p><i class="fas fa-clock"></i> 2 ngày 1 đêm</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Quy Nhơn - Phú Yên</p>
-                        <div class="tour-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(4.9)</span>
-                        </div>
-                        <a href="tour-details.html" class="book-btn">Đặt Tour</a>
+                <div class="place-item">
+                    <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=2070&auto=format&fit=crop"
+                        alt="Quy Nhơn">
+                    <div class="place-overlay">
+                        <h3>Quy Nhơn</h3>
+                        <p>Kỳ Co - Eo Gió & Bãi Xếp</p>
                     </div>
                 </div>
-                <div class="tour-card">
-                    <div class="tour-image">
-                        <a href="tour-details.html">
-                            <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Tour Phú Yên">
-                        </a>
-                        <div class="tour-price">2.200.000đ</div>
-                    </div>
-                    <div class="tour-content">
-                        <a href="tour-details.html" style="text-decoration: none; color: inherit;">
-                            <h3>Tour Phú Yên 3N2Đ</h3>
-                        </a>
-                        <p><i class="fas fa-clock"></i> 3 ngày 2 đêm</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Tuy Hòa - Đại Lãnh</p>
-                        <div class="tour-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(4.7)</span>
-                        </div>
-                        <a href="tour-details.html" class="book-btn">Đặt Tour</a>
+                <div class="place-item">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2070&auto=format&fit=crop"
+                        alt="Kon Tum">
+                    <div class="place-overlay">
+                        <h3>Kon Tum</h3>
+                        <p>Nhà Thờ Gỗ & Măng Đen Đại Ngàn</p>
                     </div>
                 </div>
-                <div class="tour-card">
-                    <div class="tour-image">
-                        <a href="tour-details.html">
-                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Tour Kon Tum">
-                        </a>
-                        <div class="tour-price">2.500.000đ</div>
-                    </div>
-                    <div class="tour-content">
-                        <a href="tour-details.html" style="text-decoration: none; color: inherit;">
-                            <h3>Tour Kon Tum 3N2Đ</h3>
-                        </a>
-                        <p><i class="fas fa-clock"></i> 3 ngày 2 đêm</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Kon Tum - Pleiku</p>
-                        <div class="tour-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(4.8)</span>
-                        </div>
-                        <a href="tour-details.html" class="book-btn">Đặt Tour</a>
+                <div class="place-item">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop"
+                        alt="Phú Yên">
+                    <div class="place-overlay">
+                        <h3>Phú Yên</h3>
+                        <p>Ghềnh Đá Đĩa & Mũi Điện</p>
                     </div>
                 </div>
-                <div class="tour-card">
-                    <div class="tour-image">
-                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Tour Quy Nhơn">
-                        <div class="tour-price">1.800.000đ</div>
-                    </div>
-                    <div class="tour-content">
-                        <h3>Tour Quy Nhơn 2N1Đ</h3>
-                        <p><i class="fas fa-clock"></i> 2 ngày 1 đêm</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Quy Nhơn - Phú Yên</p>
-                        <div class="tour-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(4.9)</span>
-                        </div>
-                        <a href="tour-details.html" class="book-btn">Đặt Tour</a>
-                    </div>
-                </div>
-                <div class="tour-card">
-                    <div class="tour-image">
-                        <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Tour Phú Yên">
-                        <div class="tour-price">2.200.000đ</div>
-                    </div>
-                    <div class="tour-content">
-                        <h3>Tour Phú Yên 3N2Đ</h3>
-                        <p><i class="fas fa-clock"></i> 3 ngày 2 đêm</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Tuy Hòa - Đại Lãnh</p>
-                        <div class="tour-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(4.7)</span>
-                        </div>
-                        <button class="book-btn">Đặt Tour</button>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center">
-                <a href="tours.html" class="view-more-btn">Xem Tour Khác</a>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services offer-one">
+    <!-- Tour nổi bật -->
+    <section id="tours" class="tours section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h5 class="section-subtitle">Gợi Ý Tuyệt Vời</h5>
+                <h2 class="section-title">Tour Du Lịch <span>Nổi Bật</span></h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="tours-carousel owl-carousel owl-theme animate-on-scroll">
+                <!-- Tour 1 -->
+                <div class="tour-card">
+                    <div class="tour-img">
+                        <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=2070&auto=format&fit=crop"
+                            alt="Gia Lai">
+                        <div class="tour-price">Từ 1,500,000đ</div>
+                    </div>
+                    <div class="tour-info">
+                        <h3>Khám Phá Cao Nguyên Gia Lai</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Gia Lai • 3 Ngày 2 Đêm</p>
+                        <div class="tour-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <a href="tour-detail.html" class="btn-card">Chi Tiết Tour</a>
+                    </div>
+                </div>
+
+                <!-- Tour 2 -->
+                <div class="tour-card">
+                    <div class="tour-img">
+                        <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=2070&auto=format&fit=crop"
+                            alt="Quy Nhơn">
+                        <div class="tour-price">Từ 2,200,000đ</div>
+                    </div>
+                    <div class="tour-info">
+                        <h3>Quy Nhơn - Thành Phố Biển</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Bình Định • 4 Ngày 3 Đêm</p>
+                        <div class="tour-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <a href="tour-detail.html" class="btn-card">Chi Tiết Tour</a>
+                    </div>
+                </div>
+
+                <!-- Tour 3 -->
+                <div class="tour-card">
+                    <div class="tour-img">
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2070&auto=format&fit=crop"
+                            alt="Kon Tum">
+                        <div class="tour-price">Từ 1,800,000đ</div>
+                    </div>
+                    <div class="tour-info">
+                        <h3>Vẻ Đẹp Kon Tum Đại Ngàn</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Kon Tum • 3 Ngày 2 Đêm</p>
+                        <div class="tour-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(4.8)</span>
+                        </div>
+                        <a href="tour-detail.html" class="btn-card">Chi Tiết Tour</a>
+                    </div>
+                </div>
+
+                <!-- Tour 4 -->
+                <div class="tour-card">
+                    <div class="tour-img">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop"
+                            alt="Phú Yên">
+                        <div class="tour-price">Từ 1,900,000đ</div>
+                    </div>
+                    <div class="tour-info">
+                        <h3>Phú Yên - Hoa Vàng Trên Cỏ Xanh</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Phú Yên • 3 Ngày 2 Đêm</p>
+                        <div class="tour-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <a href="tour-detail.html" class="btn-card">Chi Tiết Tour</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Thuê xe, Đặc sản) -->
+    <section id="services" class="services section-padding">
         <div class="container">
             <div class="section-header">
-                <h2>Dịch Vụ Của Chúng Tôi</h2>
-                <p>Trải nghiệm dịch vụ toàn diện cho chuyến đi hoàn hảo</p>
+                <h5 class="section-subtitle">Dịch Vụ Đi Kèm</h5>
+                <h2 class="section-title">Tiện Nghi <span>Chu Toàn</span></h2>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-car"></i>
+
+            <div class="services-wrapper">
+                <div id="cars" class="service-block animate-on-scroll">
+                    <div class="service-content">
+                        <h3>Dịch Vụ Thuê Xe</h3>
+                        <p>Cung cấp đa dạng các loại xe từ 4 - 45 chỗ đời mới, phục vụ tham quan, công tác và đưa đón
+                            sân bay tại khu vực Miền Trung - Tây Nguyên.</p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Xe đời mới, sạch sẽ, an toàn</li>
+                            <li><i class="fas fa-check"></i> Tài xế nhiệt tình, am hiểu đường xá</li>
+                            <li><i class="fas fa-check"></i> Giá cả cạnh tranh, minh bạch</li>
+                        </ul>
+                        <a href="thue-xe.html" class="btn-outline dark">Đặt Xe Ngay</a>
                     </div>
-                    <h3>Thuê Xe</h3>
-                    <p>Dịch vụ cho thuê xe chất lượng cao với đội ngũ tài xế chuyên nghiệp, an toàn</p>
-                    <a href="car-rental.html" class="service-btn">Tìm Hiểu Thêm</a>
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=2070&auto=format&fit=crop"
+                            alt="Car Rental">
+                    </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-utensils"></i>
+
+                <div class="service-block reverse animate-on-scroll">
+                    <div class="service-content">
+                        <h3>Đặc Sản & Ẩm Thực</h3>
+                        <p>Thưởng thức tinh hoa ẩm thực địa phương và thế giới qua bàn tay của những đầu bếp 5 sao hàng
+                            đầu.</p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Thực đơn cá nhân hóa</li>
+                            <li><i class="fas fa-check"></i> Nguyên liệu hữu cơ tươi sạch</li>
+                            <li><i class="fas fa-check"></i> Trải nghiệm Dining độc bản</li>
+                        </ul>
+                        <a href="#" class="btn-outline dark">Khám Phá Ẩm Thực</a>
                     </div>
-                    <h3>Đặc Sản</h3>
-                    <p>Khám phá và thưởng thức những món ăn đặc sản địa phương đậm đà hương vị</p>
-                    <a href="specialties.html" class="service-btn">Tìm Hiểu Thêm</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-map-marked-alt"></i>
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070&auto=format&fit=crop"
+                            alt="Specialty Food">
                     </div>
-                    <h3>Du Lịch</h3>
-                    <p>Tổ chức tour du lịch trọn gói với lịch trình phong phú và dịch vụ chuyên nghiệp</p>
-                    <a href="tours.html" class="service-btn">Tìm Hiểu Thêm</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Blog Section -->
-    <section class="blog">
+    <section id="blog" class="blog section-padding bg-light">
         <div class="container">
-            <div class="section-header">
-                <h2>Tin Tức & Blog</h2>
-                <p>Cập nhật những thông tin mới nhất về du lịch</p>
+            <div class="section-header text-center">
+                <h5 class="section-subtitle">Câu Chuyện Hành Trình</h5>
+                <h2 class="section-title">Blog <span>Du Lịch</span></h2>
+                <div class="header-line"></div>
             </div>
-            <div class="blog-slider">
-                <div class="blog-slider-container">
-                    <div class="blog-card">
-                        <div class="blog-image">
-                            <a href="blog-details.html">
-                                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Blog 1">
-                            </a>
+
+            <div class="blog-carousel owl-carousel owl-theme animate-on-scroll">
+                <article class="blog-post">
+                    <div class="post-img">
+                        <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=2070&auto=format&fit=crop"
+                            alt="Blog 1">
+                        <span class="category">Gia Lai</span>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> 20 Tháng 1, 2024</span>
+                            <span><i class="far fa-user"></i> By Admin</span>
                         </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span><i class="fas fa-calendar"></i> 15/12/2024</span>
-                                <span><i class="fas fa-user"></i> Admin</span>
+                        <h3>Check-in "Đôi mắt Pleiku" Biển Hồ T'Nưng</h3>
+                        <p>Kinh nghiệm khám phá hồ nước ngọt tự nhiên đẹp nhất Tây Nguyên trong mùa hoa dã quỳ...</p>
+                        <a href="#" class="read-more">Đọc Tiếp <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="post-img">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop"
+                            alt="Blog 2">
+                        <span class="category">Quy Nhơn</span>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> 18 Tháng 1, 2024</span>
+                            <span><i class="far fa-user"></i> By Admin</span>
+                        </div>
+                        <h3>Lịch trình 3 ngày 2 đêm tại đảo Kỳ Co</h3>
+                        <p>Hướng dẫn chi tiết từ cách di chuyển đến những hoạt động lặn ngắm san hô không thể bỏ lỡ...
+                        </p>
+                        <a href="#" class="read-more">Đọc Tiếp <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="post-img">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop"
+                            alt="Blog 3">
+                        <span class="category">Kon Tum</span>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> 15 Tháng 1, 2024</span>
+                            <span><i class="far fa-user"></i> By Admin</span>
+                        </div>
+                        <h3>Chinh phục Măng Đen - "Đà Lạt thứ hai"</h3>
+                        <p>Hành trình tìm về sự yên bình nơi đại ngàn Kon Tum với khí hậu se lạnh và rừng thông bạt
+                            ngàn...</p>
+                        <a href="#" class="read-more">Đọc Tiếp <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center mt-60">
+                <a href="#" class="btn-primary">Xem Tất Cả Bài Viết</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-info-side">
+                    <h2>Liên Hệ Với <span>Chúng Tôi</span></h2>
+                    <p>Hãy để chúng tôi giúp bạn hiện thực hóa kỳ nghỉ trong mơ.</p>
+
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <span>Hotline 24/7</span>
+                                <p>+84 0905 835 538</p>
                             </div>
-                            <a href="blog-details.html" style="text-decoration: none; color: inherit;">
-                                <h3>Top 10 Địa Điểm Du Lịch Kon Tum Không Thể Bỏ Qua</h3>
-                            </a>
-                            <p>Khám phá những điểm đến tuyệt vời nhất tại Kon Tum với cảnh đẹp thiên nhiên và văn hóa độc đáo...</p>
-                            <a href="blog-details.html" class="read-more">Đọc Thêm <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <p>Fitothinh@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span>Địa Chỉ</span>
+                                <p>123 Đường Sắc Màu, Quận 1, TP. Hồ Chí Minh</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="blog-card">
-                        <div class="blog-image">
-                            <a href="blog-details.html">
-                                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Blog 2">
-                            </a>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span><i class="fas fa-calendar"></i> 12/12/2024</span>
-                                <span><i class="fas fa-user"></i> Admin</span>
-                            </div>
-                            <a href="blog-details.html" style="text-decoration: none; color: inherit;">
-                                <h3>Kinh Nghiệm Du Lịch Quy Nhơn Tự Túc</h3>
-                            </a>
-                            <p>Hướng dẫn chi tiết cho chuyến du lịch Quy Nhơn tự túc với chi phí tiết kiệm nhất...</p>
-                            <a href="blog-details.html" class="read-more">Đọc Thêm <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <div class="blog-image">
-                            <a href="blog-details.html">
-                                <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Blog 3">
-                            </a>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span><i class="fas fa-calendar"></i> 10/12/2024</span>
-                                <span><i class="fas fa-user"></i> Admin</span>
-                            </div>
-                            <a href="blog-details.html" style="text-decoration: none; color: inherit;">
-                                <h3>Đặc Sản Miền Trung Phải Thử Một Lần Trong Đời</h3>
-                            </a>
-                            <p>Tổng hợp những món ăn đặc sản không thể bỏ qua khi Du Lịch Gia Lai Việt Nam...</p>
-                            <a href="blog-details.html" class="read-more">Đọc Thêm <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <div class="blog-image">
-                            <a href="blog-details.html">
-                                <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Blog 4">
-                            </a>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span><i class="fas fa-calendar"></i> 08/12/2024</span>
-                                <span><i class="fas fa-user"></i> Admin</span>
-                            </div>
-                            <a href="blog-details.html" style="text-decoration: none; color: inherit;">
-                                <h3>Khám Phá Ẩm Thực Đường Phố Đà Nẵng</h3>
-                            </a>
-                            <p>Những món ăn đường phố ngon nhất định phải thử khi du lịch Đà Nẵng...</p>
-                            <a href="blog-details.html" class="read-more">Đọc Thêm <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <div class="blog-image">
-                            <a href="blog-details.html">
-                                <img src="https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Blog 5">
-                            </a>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span><i class="fas fa-calendar"></i> 05/12/2024</span>
-                                <span><i class="fas fa-user"></i> Admin</span>
-                            </div>
-                            <a href="blog-details.html" style="text-decoration: none; color: inherit;">
-                                <h3>Lịch Trình Du Lịch Huế 3 Ngày 2 Đêm</h3>
-                            </a>
-                            <p>Gợi ý lịch trình chi tiết để khám phá trọn vẹn cố đô Huế trong 3 ngày 2 đêm...</p>
-                            <a href="blog-details.html" class="read-more">Đọc Thêm <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <div class="blog-image">
-                            <a href="blog-details.html">
-                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Blog 6">
-                            </a>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span><i class="fas fa-calendar"></i> 01/12/2024</span>
-                                <span><i class="fas fa-user"></i> Admin</span>
-                            </div>
-                            <a href="blog-details.html" style="text-decoration: none; color: inherit;">
-                                <h3>Kinh Nghiệm Leo Núi Tại Gia Lai</h3>
-                            </a>
-                            <p>Những lưu ý quan trọng và chuẩn bị cần thiết khi leo núi tại Gia Lai...</p>
-                            <a href="blog-details.html" class="read-more">Đọc Thêm <i class="fas fa-arrow-right"></i></a>
-                        </div>
+
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="text-center">
-                <a href="blog.html" class="view-more-btn">Xem Các Bài Viết Khác</a>
+
+                <div class="contact-form-side">
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="text" placeholder="Họ và tên" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option value="" disabled selected>Chọn chủ đề quan tâm</option>
+                                <option value="tour">Tư vấn Tour</option>
+                                <option value="car">Thuê xe sang</option>
+                                <option value="other">Yêu cầu khác</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="4" placeholder="Lời nhắn của bạn..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary full-width">Gửi Yêu Cầu</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="main-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3><i class="fas fa-map-marked-alt"></i> Du Lịch Gia Lai</h3>
+            <div class="footer-grid">
+                <!-- Brand Info -->
+                <div class="footer-widget brand-widget">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-map-marked-alt"></i> Du Lịch Gia Lai
+                    </a>
                     <p>Đồng hành cùng bạn khám phá vẻ đẹp Việt Nam</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
                         <a href="#"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
-                <div class="footer-section">
+
+                <!-- Quick Links -->
+                <div class="footer-widget links-widget">
                     <h4>Liên Kết Nhanh</h4>
                     <ul>
-                        <li><a href="#home">Trang Chủ</a></li>
-                        <li><a href="#tours">Tour</a></li>
-                        <li><a href="#specialties">Đặc Sản</a></li>
-                        <li><a href="#car-rental">Thuê Xe</a></li>
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="tours.html">Tour</a></li>
+                        <li><a href="dac-san.html">Đặc Sản</a></li>
+                        <li><a href="thue-xe.html">Thuê Xe</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+
+                <!-- Information -->
+                <div class="footer-widget links-widget">
                     <h4>Thông Tin</h4>
                     <ul>
-                        <li><a href="#news">Tin Tức</a></li>
-                        <li><a href="#contact">Liên Hệ</a></li>
+                        <li><a href="blog.html">Tin Tức</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
                         <li><a href="#">Chính Sách</a></li>
                         <li><a href="#">Điều Khoản</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+
+                <!-- Contact -->
+                <div class="footer-widget contact-widget">
                     <h4>Liên Hệ</h4>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> +84 123 456 789</p>
-                        <p><i class="fas fa-envelope"></i> info@dulichmientrung.com</p>
-                        <p><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, TP. Quy Nhơn</p>
-                    </div>
+                    <ul>
+                        <li><i class="fas fa-phone-alt"></i> +84 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> info@dulichmientrung.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, TP. Quy Nhơn</li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
+
+            <div class="footer-bottom-bar">
                 <p>&copy; 2024 Du Lịch Gia Lai. Tất cả quyền được bảo lưu.</p>
             </div>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script src="assets/script.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
