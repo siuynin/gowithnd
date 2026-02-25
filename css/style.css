@@ -1,7 +1,7 @@
 /* Base & Variables */
 :root {
     --primary: #0473db;
-    --red:rgba(240, 6, 6, 0.603);
+    --red: rgba(240, 6, 6, 0.603);
     /* Vibrant Blue */
     --secondary: #1a1a1a;
     /* Rich Black */
@@ -463,6 +463,7 @@ h4,
         transform: translateY(60px);
     }
 }
+
 .page-header {
     height: 40vh;
     display: flex;
@@ -473,7 +474,26 @@ h4,
     color: var(--white);
     text-align: center;
 }
+
 /* About Section */
+/* About Section */
+.about {
+    position: relative;
+}
+
+.about-bg-shape {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 0;
+    animation: floating 6s ease-in-out infinite;
+}
+
+.about .container {
+    position: relative;
+    z-index: 1;
+}
+
 .about-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -581,6 +601,13 @@ h4,
     color: var(--white);
     opacity: 0.8;
     transition: var(--transition);
+}
+
+.places {
+    background-image: url('../images/testimonials-section-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .place-item:hover img {
@@ -1030,7 +1057,7 @@ h4,
     .footer-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .main-footer {
         padding: 60px 0 30px;
     }
@@ -1106,9 +1133,11 @@ h4,
     .nav-links.active {
         right: 0;
     }
-    .nav-extra .btn-primary{
+
+    .nav-extra .btn-primary {
         display: none;
     }
+
     .nav-links a {
         color: var(--white) !important;
         font-size: 24px;
@@ -1275,9 +1304,11 @@ h4,
     font-size: 14px;
     line-height: 1.2;
 }
-.list-style .spec-item i { 
+
+.list-style .spec-item i {
     color: red;
 }
+
 .spec-item i {
     color: var(--white);
     width: 20px;
@@ -1624,7 +1655,7 @@ h4,
     line-height: 1.2;
 }
 
- 
+
 
 .album-item img {
     height: 450px;
@@ -1699,6 +1730,7 @@ h4,
     font-size: 24px;
     margin-bottom: 15px;
 }
+
 /* Responsive Blog Detail */
 @media (max-width: 992px) {
     .blog-wrapper {
@@ -1713,11 +1745,12 @@ h4,
 .map-section {
     width: 100%;
     height: 450px;
-    margin-bottom: -5px; /* Remove gap between map and footer if any */
+    margin-bottom: -5px;
+    /* Remove gap between map and footer if any */
 }
 
 .map-section iframe {
     width: 100%;
     height: 100%;
     border: 0;
- }
+}
